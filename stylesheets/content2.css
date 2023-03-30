@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #352C44;
+}
+
+#game-container {
+  width: 90%;
+  height: 70%;
+  margin: auto;
+  position: relative;
+}
+
+#player {
+  width: 30%;
+  height: 30%;
+  background-image: url('../img/samo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#enemy-container {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.enemy {
+  width: 10%;
+  height: 10%;
+  background-color: green;
+  margin: 2%;
+  display: inline-block;
+}
